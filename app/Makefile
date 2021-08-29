@@ -9,7 +9,7 @@ all:
 	cp ./changelog mlvpn-2.3.5/debian/changelog
 	cp ./control mlvpn-2.3.5/debian/control
 	cd ./mlvpn-2.3.5; debuild -i -us -uc
-	cd ./mlvpn-2.3.5; debsign -e "Gilles GAUVENET <ggauvenet@h42.one>"
+#	cd ./mlvpn-2.3.5; debsign -e "Gilles GAUVENET <ggauvenet@h42.one>"
 
 clean: 
 	rm -rf mlvpn*
